@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Slider</h1>
+    <div class="slider">
+        <div class="slideshow cycle-slideshow"
+            data-cycle-fx="scrollHorz"
+            data-cycle-timeout="0"
+            data-cycle-prev="#prev"
+            data-cycle-next="#next"
+            data-cycle-pager="#adv-custom-pager"
+            data-cycle-pager-template="<a href='#'><img src='{{src}}' alt='{{alt}}'></a>">
+            <img src="images/aurora-01.jpeg" alt="aurora-01">
+            <img src="images/aurora-02.jpeg" alt="aurora-02">
+            <img src="images/aurora-03.jpeg" alt="aurora-03">
+            <img src="images/aurora-04.jpeg" alt="aurora-04">
+        </div>
+        <div class="slider-control">
+            <button id="prev" class="prev"><img src="images/arrow-left-white.png" alt="Prevous Slide"></button>
+            <button id="next" class="next"><img src="images/arrow-right-white.png" alt="Next Slide"></button>
+        </div>
+    </div>
+    <h1>Aspect-ratio</h1>
+    <div class="card-container">
+        <div class="card">
+            <img class="card-image" src="images/hands-with-flower.jpg" alt="image1">
+            <h5 class="card-title">flower</h5>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images/lady-in-forest.jpg" alt="image2">
+            <h5 class="card-title">forest</h5>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images/road-through-mountain.jpg" alt="image3">
+            <h5 class="card-title">mountain</h5>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images/skiers-on-mountain-top.jpg" alt="image4">
+            <h5 class="card-title">mountain top</h5>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images/sunset-over-lake.jpg" alt="image5">
+            <h5 class="card-title">sunset over lake</h5>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images/yosemite-national-park.jpg" alt="image6">
+            <h5 class="card-title">yosemite national park</h5>
+        </div>
+    </div>
+
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/jquery.cycle2.min.js"></script>
+</body>
+</html>
